@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio Farhan Fadhilah</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="particles-js"></div>
+    <div id="box">
+        <div class="box1 onlywide animated bounceOutLeft" style="animation-delay:1.7s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.9s;"></div>
+        <div class="box2 animated bounceOutRight" style="animation-delay:1.9s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.7s;"></div>
+    </div>
+    <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay:2.2s;">about</a>
+    <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay:2.2s;">project</a>
+    <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay:2.2s;">contact</a>
+    <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
+        <h1>Muhammad Farhan Fadhilah.</h1>
+        <h2>Data Analyst / Database Administrator / Content Writer</h2>
+        <div id="menu">
+            <a onclick="showabout()">about</a>
+            <a onclick="showwork()">project</a>
+            <a onclick="showcontact()">contact</a>
+        </div>
+        <table>
+                <tr>
+                    <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social" href="https://www.instagram.com/fadhilahfrhn/"><i class="fab fa-instagram"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social" href="https://www.linkedin.com/in/farhan-fadhilah-"><i class="fab fa-linkedin-in"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social" href="https://github.com/FadhilahFrhn"><i class="fab fa-github"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.8s;"><a class="social" href="mailto:farhanfadhilah62@gmail.com"><i class="fa fa-envelope"></i></a></td>
+                </tr>
+        </table>
+    </div>
+    <div id="work_container" class="container">
+        <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
+        <h1>Project.</h1>
+        <section>
+            <h2>Stackoverflow</h2>
+            <p>
+                Back again with the Stackoverflow dataset, different from before, this time I processed the dataset using Python to answer several business questions that required me to create charts from the insights I had obtained.
+                <br>
+                <br>
+                The first question, I was asked to make three line charts, each diagram representing a group of questions on Stackoverflow, the group consisting of BigQuery, Data-Studio, and Looker questions. The number of questions grouped is based on the month in the year the question was created.
+                <br>
+                <br>
+                The first step I carried out Exploratory Data Analysis, at this stage I started to get acquainted with the dataset so that I could determine key columns to answer the business questions given, then I carried out Data Cleaning by eliminating duplicate data so as not to interfere with the data aggregation process, finally I processed the aggregated data into a line chart that is easy to read.
+                <br>
+                <br>
+                Apart from answering this question, I have also succeeded in answering two other questions which are no less interesting, explore them more deeply by pressing the view project button below.
+            </p>
+            <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;Python</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Google Colab</div>
+            </div>
+            <button class="btn_two"><a href="https://github.com/FadhilahFrhn/Python-Practicing-Stackoverflow-Dataset/blob/main/Data%20Analysis%20in%20Python.ipynb">View Project</a></button>
+            <h2>Stackoverflow data in real life</h2>
+            <p>
+                In this project I focused on learning and practicing using the SQL language. The platform I use is Google BigQuery sandbox, the reason is because I want to utilize the public dataset available in Google BigQuery, in this project I use the Stackoverflow dataset. I don't use all the tables, I only use the post_questions, post_answers, users, and badges tables. From the four tables, I try to dig insights through the relationship between one table and another.
+                <br>
+                <br>
+                I got some interesting insights, including, I managed to present a list of all questions and their answers related to the Python programming language in 2020, then how many questions were made by Indonesians from 2015 to 2020, then in which year questions about BigQuery received the most answers, then calculated the average time span required by the username to get the answer to the question and I made a distribution based on the 10th, 25th, median, 75th, and 95th percentiles. Apart from that, there are several other interesting insights that I managed to dig up, to find out more you can pressing the view project button below.
+            </p>
+            <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;SQL</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Google BigQuery</div>
+            </div>
+            <button class="btn_two"><a href="https://github.com/FadhilahFrhn/stackoverflow-data-in-real-life/blob/main/SQL-Practicing-Stackoverflow-Public-Dataset">View Project</a></button>
+            <h2>Dota 2 Competitive Picks</h2>
+            <p>
+                In this project, I explored the Dota 2 Competitive Picks dataset that I obtained through the Kaggle site. From this dataset, I learned to process data using Python, starting from importing data, checking and treating null values, checking and treating duplicate data, applying aggregation functions as part of data exploration, creating graphs, and so on.
+                <br>
+                <br>
+                When the Dota 2 Competitive dataset was processed, I found some interesting insights from the dataset. First, there is a relationship between the roles each hero has on win rate, time picked and times banned, heroes with roles disabler have greater win rates and times picked compared to other roles, while heroes with the biggest times banned held by a hero with an escape role because perhaps this hero tends to be difficult to fight because of his agile movement abilities. Apart from that, there are other interesting insights that might be useful or a reference for Dota 2 players, such as a comparison of the winning percentage of niche heroes with meta heroes, or the versatility of heroes' abilities based on their primary attributes.
+            </p>
+            <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;Python</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Looker Studio</div>
+            </div>
+            <button class="btn_two"><a href="https://github.com/FadhilahFrhn/Dota-2-Competitive-Picks-Data-Analysis/blob/main/Dota%202%20Competitive%20Picks%20in%20ESL%20Dreamleague%20Season%2020%20Dataset.ipynb">View Project</a></button>
+        </section>
+    </div>
+    <div id="about_container" class="container">
+            <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+            <h1>about.</h1>
+            <section>
+                <h2>About me</h2>
+                <p>
+                    He graduated from the journalism study program at Padjadjaran University. He is interested in the world of data and technology, he has made several projects in the field of data analyst. He plans to have a career as a data analyst, on the other hand he is also opening up other job opportunities, especially those related to data and technology.
+                </p>
+            </section>
+            <section>
+                <h2>Skills</h2>
+                <p>
+                    Microsoft Excel, Google Spreadsheets, Python, Google Big Query, SQL, Power BI, Looker Studio
+                </p>
+            </section>
+        </div>
+          <div id="contact_container" class="container">
+            <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
+            <h1>contact.</h1>
+            <section>
+                <h2>contact me</h2>
+                <p>
+                    <form>
+                        <input type="text" placeholder="name" required>
+                        <input type="email" placeholder="email" required><br>
+                        <textarea placeholder="your message" required rows="5"></textarea><br>
+                        <button class="btn_one">send</button>
+                    </form> 
+                </p>
+            </section>
+        </div>
+        <div id="footer">
+            created due to industrial pressure <br>
+        </div>
+    <script src="index.js" type="text/javascript"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
